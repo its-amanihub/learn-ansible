@@ -7,3 +7,8 @@
     - name: print url
       ansible.builtin.debug:
         msg: url - {{url}}
+    - name: Demo on variables - Role variables
+      hosts: localhost
+      connection: local
+      roles:
+         - sample    

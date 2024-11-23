@@ -20,3 +20,15 @@
 # 4. Playbook - Play Vars
 # 5. Roles - defaults
 
+- name : Demo on register variable
+  hosts: loacal hosts:
+  connection : local
+  become : yes
+  tasks:
+    - name: check package
+      ansible.builtin.dnf:
+        name: Zlib
+        state: installed
+      register: out
+      
+       

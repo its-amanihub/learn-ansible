@@ -21,7 +21,7 @@
 # 5. Roles - defaults
 
 - name : Demo on register variable
-  hosts: loacal hosts:
+  hosts: loacal hosts
   connection : local
   become : yes
   tasks:
@@ -30,5 +30,5 @@
         name: Zlib
         state: installed
       register: out
-      
+
        

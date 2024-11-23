@@ -21,11 +21,11 @@
       vars:
         URL: tasks.google.com
 
-    - name: Demo on variables - Role variables
-      hosts: localhost
-      connection: local
-      roles:
-         - sample    
+- name: Demo on variables - Role variables
+  hosts: localhost
+  connection: local
+  roles:
+    - sample    
 
 ## Precedence
 # 1. CLI
